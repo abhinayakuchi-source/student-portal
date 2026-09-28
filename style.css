@@ -1,0 +1,144 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 12px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  margin: 0 20px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #ffeb3b;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #6a11cb;
+}
+
+/* Grid Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px 18px;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s;
+}
+input:focus, select:focus {
+  border: 1px solid #6a11cb;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Card */
+.card {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9ff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+th {
+  background: #6a11cb;
+  color: white;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Alert Box */
+.alert {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.alert.error {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+.alert.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    width: 95%;
+    padding: 18px;
+  }
+  table, th, td {
+    font-size: 14px;
+  }
+}
